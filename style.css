@@ -107,9 +107,8 @@ div.section {
 	float: right;
 	height: 100%;
 	margin-bottom:1.5em;
-	margin-right: 1em;
-	padding-right: 1em;
-	padding-bottom: 1em;
+	margin-left: 1em;
+	padding: 1em;
 }
 .minileft div {
 	text-align: center;
