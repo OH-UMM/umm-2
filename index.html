@@ -4,7 +4,6 @@
 <head>
         <title>Practicing Git at University of Arizona</title>
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-	<script src="poem.js"></script>
 </head>
 
 <body>
@@ -39,9 +38,7 @@
 
         <div class="section" id="poem">
 		<p>An interactive poem about version control:</p>
-		<div id="line">
-		<p onClick=nextLine(0)>(Click to advance.)</p>
-		</div>
+		<p id="line">(Click to advance.)</p>
         </div>
 
         <div class="section" id="more">
@@ -87,5 +84,13 @@
 		<a href="http://gitimmersion.com/">Git Immersion</a></p>
         </div>
 
+        <script src="poem.js" type="text/javascript"></script>
+        <script type="text/javascript">
+                var line = document.getElementById('line');
+
+                line.onclick = function() {
+                        Poem.advance(this);
+                };
+        </script>
 </body>
 </html>
