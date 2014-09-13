@@ -1,11 +1,24 @@
-function nextLine(line) {
+var Poem = (function() {
 
-	var poem = new Array("<p onClick=nextLine(1)>There once was a maintainer on github</p>",
-"<p onClick=nextLine(2)>So many pull requests she did snub</p>",
-"<p onClick=nextLine(3)>So I forked the repo</p>",
-"<p onClick=nextLine(4)>Now they all send <em>me</em> changes, d'oh!</p>",
-"<p onClick=nextLine(5)>Said the maintainer, 'Welcome to the club!'</p>");
+  'use strict';
 
-	document.getElementById("line").innerHTML=poem[line];
-}
+  var current = 0;
 
+  var lines = [
+    'There once was a maintainer on GitHub',
+    'So many pull requests she did snub',
+    'So I forked the repo',
+    'Now they all send <em>me</em> changes, d\'oh!',
+    'Said the maintainer, "Welcome to the club!"'
+  ];
+
+  var advance = function(element) {
+    element.innerHTML = lines[current % lines.length];
+    current++;
+  };
+
+  return {
+    advance: advance
+  };
+
+})();
