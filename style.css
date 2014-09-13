@@ -21,6 +21,7 @@ html, body {
 }
 
 body{
+	border-bottom: 1em solid #000;
 	font: 130%/1.3 TrebuchetMS,Arial,sans-serif;  /* Default fonts */
 	text-align: left; /* Alignment of the text */
 	color: black; /* Main text color */
@@ -29,21 +30,32 @@ body{
 }
 
 a {                  /* A stands for link, so this section is setting the default characteristics of links. */
-	color: #C41E3A;
+	color: #7a0019;
+}
+a:hover {
 	text-decoration: none;
 }
 
 h1 {		     /* This styles the header at the top of the page */
-	border-bottom: 1px dotted #eee;
-	font: bold 1.2em Georgia, serif;
+	background-color: #7a0019;
+	border-bottom: 1px solid #333;
+	font: bold 1.5em Calibri, Cantarell, sans-serif;
+	padding: 2em 20% 1em 10%;
+	margin: -1em -.5em 1em -.5em;
 	text-align: left;
+	text-shadow: 0 0px 8px #333;
+	text-transform: uppercase;
 	color: white;
 }
 
 h2 {		     /* This styles the headers within the page */
-	font: bold 1.1em Georgia, serif;
+	font: bold 1em Georgia, serif;
 	padding: 0;
 	margin: 0;
+}
+
+p {
+	margin: 1em;
 }
 
 
@@ -57,15 +69,15 @@ div.section {
 
 /* If we want the divs with ids plan and more to look the same, we can put them together */
 #plan, #more {
-	background:#000080;
-	color: white;
+	background:#eee;
+	color: #333;
 	font: 'Source Sans Pro',Arial, Sans-Serif;
 	background-image: none;  /* replace none with url('image-url') to set a background image  */
 }
 
 /* You can alter the links within a div with the following syntax */
 #plan a {
-	color: #C41E3A;
+	color: #7a0019;
 }
 
 /* This alters the appearance of the div with id="signup". */
@@ -84,12 +96,16 @@ div.section {
 /* This alters the appearance of the div with id="minileft", the div containing the images */
 .minileft {
 	background-color: #fff;
-	border-radius: 2px;
-	float: left;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	float: right;
 	height: 100%;
 	margin-bottom:1.5em;
 	margin-right: 1em;
 	padding-right: 1em;
 	padding-bottom: 1em;
+}
+.minileft div {
+	text-align: center;
 }
 
