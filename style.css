@@ -34,13 +34,14 @@ a {                  /* A stands for link, so this section is setting the defaul
 }
 
 h1 {		     /* This styles the header at the top of the page */
-	font: bold 2.1em 'Source Sans Pro',Arial, Sans-Serif;
+	border-bottom: 1px dotted #eee;
+	font: bold 1.2em Georgia, serif;
 	text-align: left;
 	color: white;
 }
 
 h2 {		     /* This styles the headers within the page */
-	font: bold 1.1em 'Source Sans Pro',Arial, Sans-Serif;
+	font: bold 1.1em Georgia, serif;
 	padding: 0;
 	margin: 0;
 }
@@ -82,9 +83,13 @@ div.section {
 
 /* This alters the appearance of the div with id="minileft", the div containing the images */
 .minileft {
+	background-color: #fff;
+	border-radius: 2px;
 	float: left;
 	height: 100%;
 	margin-bottom:1.5em;
 	margin-right: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
 }
 
